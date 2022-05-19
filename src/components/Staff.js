@@ -8,6 +8,7 @@ function Staff({ staff, setStaff }) {
         type="radio"
         onClick={(e) => setStaff(e.target.value)}
         value="student"
+        name="staff"
       />
       <label htmlFor="instructor">Instructor</label>
       <input
@@ -15,6 +16,7 @@ function Staff({ staff, setStaff }) {
         type="radio"
         onClick={(e) => setStaff(e.target.value)}
         value="instructor"
+        name="staff"
       />
     </div>
   )
