@@ -25,7 +25,7 @@ function Form () {
     if (!name.length) errors.push("Please enter your Name");
 
     // email must exist and be properly formatted
-    let emailRegex = /^[\w]?@[\w]?\.[\w]?/g;
+    let emailRegex = /^[\w]+@[\w]+\.[\w]+/g;
     if (!email.length) errors.push("Please enter your Email");
     else if (!email.match(emailRegex)) errors.push("Please enter a valid Email");
 
