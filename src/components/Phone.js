@@ -1,6 +1,26 @@
-function Phone() {
+function Phone({ phone, setPhone, phoneType, setPhoneType }) {
   return (
-    <h1>TEST</h1>
+    <div>
+      <label htmlFor="phone">Phone:</label>
+      <input
+        id="phone"
+        type="text"
+        onChange={(e) => setPhone(e.target.value)}
+        value={phone}
+      />
+      <select
+        name="phoneType"
+        onChange={(e) => setPhoneType(e.target.value)}
+        value={phoneType}
+      >
+        <option value="" disabled>
+          Select a phone type...
+        </option>
+        <option>Home</option>
+        <option>Work</option>
+        <option>Mobile</option>
+      </select>
+    </div>
   )
 }
 

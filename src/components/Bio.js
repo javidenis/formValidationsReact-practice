@@ -1,6 +1,14 @@
-function Bio() {
+function Bio({bio, setBio}) {
   return (
-    <h1>TEST</h1>
+    <div>
+      <label htmlFor="bio">Bio:</label>
+      <textarea
+        id="bio"
+        name="bio"
+        onChange={(e) => setBio(e.target.value)}
+        value={bio}
+      />
+    </div>
   )
 }
 
