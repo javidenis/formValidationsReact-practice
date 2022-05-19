@@ -5,6 +5,7 @@ function Phone({ phone, setPhone, phoneType, setPhoneType }) {
       <input
         id="phone"
         type="text"
+        placeholder="XXX-XXX-XXXX"
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
       />
